@@ -21,7 +21,7 @@ local Paragraph = Tab1:AddParagraph({"Brookhaven", "Скрипт для скин
 local Dropdown = Tab1:AddDropdown({
   Name = "Скины",
   Description = "Выбери <font color='rgb(88, 101, 242)'>скин</font>",
-  Options = {"Голова в руках","Паучок"},
+  Options = {"Голова в руках","Паучок","Походка паука типа"},
   Default = "...",
   Flag = "dropdown teste",
   Callback = function(Value)
@@ -57,14 +57,29 @@ end
         [6] = 16946031202
     },
     [3] = "паук"
-}
+        }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-local args = {
+local args1 = {
     [1] = "wear",
     [2] = 6309592547
 }
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args1))
+      end
+if numb == "Походка паука типа" then
+          local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17061950321,
+        [2] = 17061950752,
+        [3] = 17061950749,
+        [4] = 17061950868,
+        [5] = 17061954240,
+        [6] = 17061950828
+    },
+    [3] = "SuperHo"
+}
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
 end
 end})
