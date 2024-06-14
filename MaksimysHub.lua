@@ -57,9 +57,14 @@ end
         [6] = 17047437225
     },
     [3] = "паук"
-   
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+local args = {
+    [1] = "wear",
+    [2] = 6309592547
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
 end
 end})
